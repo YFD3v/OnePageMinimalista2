@@ -1,0 +1,590 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html,body{
+    height: 100%;
+}
+.w50{
+    width: 50%;
+}
+.clear{clear: both;}
+
+.w100{
+    width: 100%;
+}
+
+.center{
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+/*Classes do site*/
+
+
+header{
+    padding: 20px;
+}
+
+header > .center{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 50%;
+}
+
+.logo h2{
+    letter-spacing: 2px;
+}
+
+nav.desktop ul{
+    list-style-type: none;
+}
+
+nav.desktop li{
+    display: inline-block;
+    padding: 0 20px;
+    transition: ease .3s;
+}
+nav.desktop a{
+    text-decoration: none;
+    color: #444;
+    text-transform: uppercase;
+}
+
+nav.desktop li:hover{
+    transform: scale(1.1);
+    color: #222;
+}
+
+nav.mobile{
+    display: none;
+}
+
+nav.mobile ul{
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    list-style-type: none;
+    text-align: center;
+    background-color: white;
+    z-index: 2;
+}
+
+nav.mobile li{
+    display: block;
+    padding: 8px 20px;
+    transition: ease .3s;
+}
+nav.mobile a{
+    text-decoration: none;
+    color: #444;
+    text-transform: uppercase;
+}
+
+nav.mobile i, nav.mobile h2{
+    cursor: pointer;
+    color: #444;
+}
+
+.box-mosaico{
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.box-mosaico-single{
+    width: 100%;
+}
+
+.img-mosaico-single{
+    width: 100%;
+    padding-top: 100%;
+    background-image: url(../images/prédio5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ccc;
+    border: 5px solid white;
+}
+
+
+
+section.servicos > .center{
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: -40px;
+}
+
+.box-servico-single h2{
+    font-weight: normal;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.box-servico-single p{
+    font-weight: normal;
+    color: white;
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+.box-servico-single:nth-of-type(1){
+    width: 30%;
+    padding: 30px 2%;
+    background-color: #576975;
+}
+
+.box-servico-single:nth-of-type(2){
+    width: 40%;
+    padding: 50px 2%;
+    background-color: #688293;
+}
+
+.box-servico-single:nth-of-type(3){
+    width: 30%;
+    padding: 30px 2%;
+    background-color: #576975;
+}
+
+section.perfil-container{
+    padding: 50px 2%;
+}
+
+section.perfil-container > .center{
+    max-width: 800px;
+}
+
+.perfil-wraper{
+    padding-top: 60%;
+    position: relative;
+}
+
+
+
+.perfil-wraper2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.img-perfil{
+    width: 40%;
+    height: 100%;
+    background-image: url(../images/predio1.jpg);
+    background-size: 100% 100%;
+}
+
+.texto-perfil{
+    width: 60%;
+    padding: 0 30px;
+}
+
+.texto-perfil h2{
+    color: #698293;
+    font-size: 18px;
+}
+
+.texto-perfil p{
+    color: #4b4b4b;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+section.videos{
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.box-video{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box-video-single{
+    width: 31%;
+    padding-top: calc(33.3% * 0.6);
+    position: relative;
+}
+
+section.videos iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+section.servicos2{
+    margin: 40px 0;
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+}
+
+section.servicos2 > .center > h2{
+    color: #698293;
+    font-size: 18px;
+    margin: 25px 0;
+}
+
+.box-servicos2-wraper{
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box-servicos2{
+    width: 33%;
+}
+
+.box-servicos2-single{
+    padding: 20px;
+}
+
+.box-servicos2-single h3{
+    font-size: 18px;
+    color: #737373;
+}
+
+.box-servicos2-single P{
+    color: #b4b4b4;
+    font-size: 13px;
+}
+
+section.depoimentos{
+    margin-top: 40px;
+    text-align: center;
+}
+
+section.depoimentos h2{
+    color: #698293;
+    font-size: 18px;
+}
+
+section.depoimentos > .center{
+    padding: 40px 0;
+    max-width: 400px;
+}
+
+.box-depoimentos-single{
+    width: 100%;
+    padding: 0 2%;
+}
+
+.box-depoimentos-single quote{
+    font-size: 15px;
+    color: #b4b4b4;
+}
+
+.nome-depoimento{
+    padding: 19px 0;
+}
+
+.nome-depoimento img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.nome-depoimento span{
+    font-size: 13px;
+    position: relative;
+    top: 5px;
+    color: #b4b4b4;
+    display: inline-block;
+    vertical-align: top;
+}
+
+section.instagram{
+    margin-top: 40px;
+    background-color: #98a5ae;
+    color: white;
+}
+
+section.instagram > .center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+}
+
+section.instagram > .center i{
+    font-size: 36px;
+    padding: 12px 0;
+}
+
+section.instagram > .center p{
+    font-size: 13px;
+    line-height: 23px;
+}
+
+.box-mosaico-social{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img-mosaico-social-single{
+    width: calc(100% / 9);
+    padding-top: calc(100% / 9);
+    background-color: blue;
+    border: 4px solid white;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section.facebook{
+    background-color: #98a5ae;
+    color: white;
+}
+
+section.facebook > .center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+}
+
+section.facebook > .center i{
+    font-size: 36px;
+    padding: 12px 0;
+}
+
+section.facebook > .center p{
+    font-size: 13px;
+    line-height: 23px;
+}
+
+section.facebook > .center a, section.instagram > .center a{
+    color: white;
+    text-align: none;
+}
+
+section.contato{
+    margin-top: 40px;
+    padding: 20px 2%;
+}
+
+section.contato > .center > h2{
+    color: #698293;
+    font-size: 18px;
+    text-align: center;
+}
+
+section.contato > .center form{
+    width: 100%;
+    max-width: 550px;
+    margin: 30px auto;
+}
+.form-wraper{
+    padding: 0 10px;
+    margin-top: 10px;
+    float: left;
+}
+
+.form-wraper span{
+    font-size: 15px;
+    color: #b4b4b4;
+}
+
+.form-wraper input[type=text]{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 9px;
+    border: 1px solid #dadada;
+    border-radius: 6px;
+    margin-top: 8px;
+}
+
+.form-wraper input[type=number], .form-wraper input[type=email]{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 9px;
+    border: 1px solid #dadada;
+    border-radius: 6px;
+    margin-top: 8px;
+}
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+.form-wraper textarea{
+    width: 100%;
+    padding: 10px;
+    resize: none;
+    height: 120px;
+    border: 1px solid #dadada;
+    border-radius: 6px;
+    margin-top: 8px;
+}
+
+.form-wraper input[type=submit]{
+    height: 35px;
+    color: white;
+    cursor: pointer;
+    background-color: #688293;
+    width: 100px;
+    border: 0;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+footer{
+    padding: 40px 0;
+    background-color: #688293;
+    text-align: center;
+}
+.box-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-single{
+    width: calc(100% / 3);
+    text-align: left;
+    color: white;
+}
+
+.footer2{
+    background-color: #222;
+    text-align: center;
+    color: white;
+    padding: 15px 0;
+}
+
+@media screen and (max-width:1024px) {
+    .img-mosaico-social-single{
+        width: calc(100% / 6);
+        padding-top: calc(100% / 6);
+    }
+
+    .box-mosaico-social > div:nth-of-type(1n+7){
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:868px){
+    nav.mobile{
+        display: block;
+    }
+
+    nav.desktop{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section.servicos > .center{
+        flex-direction: column;
+    }
+    .box-servico-single:nth-of-type(1){
+        width: 90%;
+        padding: 30px 2%;
+        max-width: 350px;
+    }
+    
+    .box-servico-single:nth-of-type(2){
+        width: 94%;
+        padding: 35px 2%;
+        max-width: 380px;
+    }
+    
+    .box-servico-single:nth-of-type(3){
+        width: 90%;
+        max-width: 350px;
+        padding: 30px 2%;
+    }
+
+    .perfil-wraper{
+        padding-top: 0;
+    }
+
+    .perfil-wraper2{
+        display: inline-block;
+        text-align: center;
+        height: auto;
+        position: static;
+    }
+    .texto-perfil {
+        margin-top: 20px;
+        width: 100%;
+        display: inline-block;
+        text-align: justify;
+    }
+
+    .img-perfil{
+        padding-top: 70%;
+        height: auto;
+        width: 50%;
+        display: inline-block;
+    }
+   
+    .box-video-single{
+        margin-top: 35px;
+        width: 100%;
+        padding-top: calc(100% * 0.6);
+    }
+
+    .img-mosaico-social-single{
+        width: calc(100% / 3);
+        padding-top: calc(100% / 3);
+    }
+
+
+    .box-mosaico-social > div:nth-of-type(1n+4){
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:580px) {
+    .img-perfil{
+        padding-top: 110%;
+        width: 80%;
+    }
+    .w50{
+        width: 100%;
+    }
+    .box-footer{
+        flex-wrap: wrap;
+    }
+    .footer-single{
+        width: 100%;
+        margin: 20px 0;
+        text-align: center;
+    }
+}
